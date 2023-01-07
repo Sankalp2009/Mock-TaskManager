@@ -6,6 +6,7 @@ const MiddleWares = jsonServer.defaults()
 
 server.use(MiddleWares)
 server.use(router)
-server.listen(8000, () => {
-  console.log(`JSON Server is running at http://localhost:${8000}`)
+server.listen(() => 
+{
+  console.log('JSON Server is running')
 })
